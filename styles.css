@@ -37,14 +37,23 @@ img {
 .bold {
     font-weight: 600;
 }
+/* making the title go over the home img */
+#home {
+    position: relative;
+    text-align: center;
+    color: white;
+}
 .quote {
+    text-align: center;
     position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 60%;
+    top: 60%;
+    left: 67%;
+    transform: translate(-30%, -45%);
     font-size: 2.2em;
     letter-spacing: 0.05em;
 }
+/* making the title go over the home img */
+
 .quote-box {
     text-align: left;
 }
@@ -188,10 +197,6 @@ img {
         display: flex;
         padding: 10%;
     }
-    .quote {
-        left: 65%;
-        top: 40%;
-    }
 }
 @media (max-width: 800px) {
     .works{
@@ -212,7 +217,6 @@ img {
         max-width: 400px;
     }
     .quote {
-        top: 52%;
         font-size: 1.3em;
     }
 }
@@ -225,7 +229,6 @@ img {
     }
     .quote {
         font-size: 1em;
-        top: 30%;
     }
     .works img {
         max-width: 250px;
